@@ -24,8 +24,8 @@ router.get('/:subject', function(req, res, next) {
 
 /* GET /lesson/<subject>
 listing all experiments in particular subject */
-router.get('/:subject/:lessonNo', function(req, res, next) {
-  experiments.find({subject:req.params.subject,lessonNo:req.params.lessonNo}, function (err, post) {
+router.get('/:subject/:expName', function(req, res, next) {
+  experiments.find({subject:req.params.subject,expName:req.params.expName}, function (err, post) {
     if (err) return next(err);
     res.json(post);
     })
