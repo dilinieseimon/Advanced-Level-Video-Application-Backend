@@ -4,6 +4,7 @@ var experimentSchema = new mongoose.Schema({
     subject: String,
     lessonNo: Number,
     expName: String,
+    expEngName: String,
     expLink: String,
 });
 
