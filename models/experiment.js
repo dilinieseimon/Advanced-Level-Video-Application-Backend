@@ -5,6 +5,7 @@ var experimentSchema = new mongoose.Schema({
     lessonNo: Number,
     expName: String,
     expEngName: String,
+    expDescription: String,
     expLink: String,
 });
 
